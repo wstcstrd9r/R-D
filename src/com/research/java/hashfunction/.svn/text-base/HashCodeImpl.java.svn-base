@@ -1,0 +1,61 @@
+package com.research.java.hashfunction;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class HashCodeImpl implements HashCodeInterface  {
+	
+	Object[] objectArray;
+	ArrayList<Integer> arrayList;
+	int mod=0;
+	int i = 0;
+	
+	public HashCodeImpl(int size, int mod){
+		objectArray = new Object[size];
+		arrayList = new ArrayList<Integer>();
+		this.mod = mod;
+
+	}
+	
+	public int generateHashCode(){
+		
+		Random ran = new Random();
+		int generatedValue;
+		
+		generatedValue = ran.nextInt(99) % 10;
+		if(arrayList.contains(generatedValue)){
+			i++;
+			generatedValue = generateHashCode();
+			
+		}else{
+			if(!arrayList.contains(generatedValue)){
+			arrayList.add(generatedValue);
+			return generatedValue;
+			}
+		} 
+		return generatedValue;
+				
+	}
+	
+	public void put(Object key, Object obj){
+		int hashCode = generateHashCode();
+		System.out.println("hashcode going in: " + hashCode);
+		objectArray[hashCode] = obj;
+	}
+
+	public int get(String str){
+		int value = 0;
+		for(int i =0; i < objectArray.length; i++){
+			Person person = (Person) objectArray[i];
+			if(person != null && str == person.getName()){
+				value = i;
+				System.out.println("value in get: " + value);
+			}
+		}
+		
+		return value;
+	}
+	
+
+
+}

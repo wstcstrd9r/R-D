@@ -1,0 +1,38 @@
+package com.research.java.recursion;
+
+public class StringRecursion {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "Test";
+		System.out.println("what is test " + name.charAt(0));
+		int length = (name.length() - 1);
+		
+		String reverseName = factorialCall(name, length);
+		System.out.println("Number " + reverseName);
+
+	}
+
+	public static String factorialCall(String name, int length){
+		//System.out.println("length at function start " + length);
+		String stringRe = "";
+		if(length<0){
+			System.out.println("is 1");
+			//System.exit(0);
+			return stringRe;
+		}else{
+			stringRe += name.charAt(length);
+			System.out.println("Length " + length);
+			return  stringRe + factorialCall(name, length-1);
+		}
+		
+		//System.out.println("After the call" + n);
+	
+
+
+	}
+
+}

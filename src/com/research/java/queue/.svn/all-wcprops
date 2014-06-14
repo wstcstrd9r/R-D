@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/503/trunk/ActivityManagement/ProjectPersistence/src/main/java/com/research/java/queue
+END
+QueueDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/511/trunk/ActivityManagement/ProjectPersistence/src/main/java/com/research/java/queue/QueueDriver.java
+END
+Driver.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/503/trunk/ActivityManagement/ProjectPersistence/src/main/java/com/research/java/queue/Driver.java
+END
+QueueInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/503/trunk/ActivityManagement/ProjectPersistence/src/main/java/com/research/java/queue/QueueInterface.java
+END
+QueueNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/511/trunk/ActivityManagement/ProjectPersistence/src/main/java/com/research/java/queue/QueueNode.java
+END
+QueueImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/503/trunk/ActivityManagement/ProjectPersistence/src/main/java/com/research/java/queue/QueueImpl.java
+END
+Queue.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/511/trunk/ActivityManagement/ProjectPersistence/src/main/java/com/research/java/queue/Queue.java
+END

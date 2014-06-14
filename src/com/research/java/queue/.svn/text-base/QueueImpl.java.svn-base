@@ -1,0 +1,25 @@
+package com.research.java.queue;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class QueueImpl {
+	ArrayList<Integer> queueList = new ArrayList<Integer>();
+
+	public QueueImpl(Integer value){
+		queueList.add(value);
+	}
+
+	public void  enqueue( Integer value ){
+		queueList.add(value);
+
+	}
+	
+	public void display(){
+		Iterator<Integer>  itr = queueList.iterator();
+		while(itr.hasNext()){
+			System.out.println("list " + itr.next());
+		}
+		System.out.println("given index " + queueList.get(0));
+	}
+}

@@ -1,0 +1,28 @@
+package com.research.java.queue;
+
+public interface QueueInterface {
+	
+	
+	void  enqueue( Object x );
+
+	/* /**
+	 * Get the first element
+	 */
+	Object getFront( );
+
+	/**
+	 * Remove the last inserted item
+	 */
+	Object dequeue( );
+
+	/**
+	 * Check if queue is empty
+	 */
+	boolean isEmpty( );
+
+	/**
+	 * Makt queue empty
+	 */
+	void makeEmpty( );
+
+}

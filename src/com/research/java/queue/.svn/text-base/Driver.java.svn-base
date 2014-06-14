@@ -1,0 +1,23 @@
+package com.research.java.queue;
+
+public class Driver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		QueueImpl queImp = new QueueImpl(1);
+		
+		queImp.enqueue(2);
+		queImp.enqueue(3);
+		queImp.enqueue(6);
+		
+	
+		queImp.display();
+		
+
+
+	}
+
+}

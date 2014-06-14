@@ -1,0 +1,55 @@
+package com.research.java.hashfunction;
+
+public class HashCodeDriver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int mod = 10;
+		int arrySize = 10;
+		//HashCodeInterface hashFunction = new HashCodeImpl(10);
+		HashCodeImpl hashFunction = new HashCodeImpl(mod, arrySize );
+
+		Person person1 = new Person("1", "jasleen");
+		hashFunction.put(person1, person1);
+		
+		Person person3 = new Person("3", "veeru");
+		hashFunction.put(person3, person3);
+		
+		Person person5 = new Person("5", "rexi");
+		hashFunction.put(person5, person5);
+		
+		Person person7 = new Person("7", "babbu");
+		hashFunction.put(person7, person7);
+		
+		
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		//System.out.println("value = " + hashFunction.generateHashCode(mod));
+		
+		
+		int valueJasleen = hashFunction.get("jasleen");
+		System.out.println("jasleen = " + valueJasleen );
+		int valueVeeru = hashFunction.get("veeru");
+		System.out.println("veeru = " + valueVeeru );
+		int valueRexi = hashFunction.get("rexi");
+		System.out.println("rexi = " + valueRexi );
+		int valueBabbu = hashFunction.get("babbu");
+		System.out.println("babbu = " + valueBabbu );
+		
+		
+		
+		
+		
+
+	}
+
+}
