@@ -9,6 +9,8 @@ public class BinaryTree {
     public BinaryTree(int v) {  
      value = v;  
     }  
+    public BinaryTree() {  
+       } 
      
     // Insert a value into the tree  
     public void insert(int v) {  
@@ -74,6 +76,7 @@ public class BinaryTree {
      b.insert(85);  
      
      b.preorder();  
+     //b.inorder();
      //System.out.print("inorder traversal"  + b.inorder());  
      //System.out.print("postorder traversal"+ b.postorder());
      
