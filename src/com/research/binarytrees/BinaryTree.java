@@ -1,87 +1,36 @@
 package com.research.binarytrees;
 
-public class BinaryTree {  
-    
-    BinaryTree left;  
-    BinaryTree right;  
-    int value;  
-     
-    public BinaryTree(int v) {  
-     value = v;  
-    }  
-    public BinaryTree() {  
-       } 
-     
-    // Insert a value into the tree  
-    public void insert(int v) {  
-     if(v < value) {  
-      if(left == null)  
-       left = new BinaryTree(v);  
-      else  
-       left.insert(v);  
-     }  
-     
-     else if(v > value) {  
-      if(right == null)  
-       right = new BinaryTree(v);  
-      else  
-       right.insert(v);  
-     }  
-    }  
-     
-     
-     
-    public void preorder() {  
-     System.out.println(value);  
-     if(left != null) left.preorder();  
-     if(right != null) right.preorder();  
-    }  
-     
-     
-     
-     
-    public void inorder() {  
-     if(left != null) left.inorder();  
-     System.out.println(value);  
-     if(right != null) right.inorder();  
-    }  
-     
-     
-    public void postorder() {  
-     if(left != null) left.postorder();  
-     if(right != null) right.postorder();  
-     System.out.println(value);  
-    }  
-     
-     
-     
-     
-    public static void main(String args[])  
-    {  
-     
-     
-     BinaryTree b = new BinaryTree(50);  
-     
-     
-     b.insert(20);  
-     b.insert(40);  
-     b.insert(10);  
-     b.insert(5);  
-     b.insert(45);  
-     
-     b.insert(70);  
-     b.insert(60);  
-     b.insert(80);  
-     b.insert(55);  
-     b.insert(85);  
-     
-     b.preorder();  
-     //b.inorder();
-     //System.out.print("inorder traversal"  + b.inorder());  
-     //System.out.print("postorder traversal"+ b.postorder());
-     
-     
-     
-    }  
-     
-   }  
+public class BinaryTree {
+
+	public static void main(String[] args) {
+		//In order:aim for the smalled values first. start with the left child
+		Node node = new Node();
+		node.add(7);
+		node.add(1);
+		node.add(0);
+		node.add(3);
+		node.add(2);
+		node.add(5);
+		node.add(4);
+		node.add(6);
+		node.add(9);
+		node.add(8);
+		node.add(10);
+		System.out.println("Preorder Traversal");
+		node.preOrderTraversal(node.root);
+		System.out.println();
+		System.out.println("Inorder Traversal");
+		node.inOrderTraversal(node.root);
+		System.out.println();
+		System.out.println("Postorder Traversal");
+		node.postOrderTraversal(node.root);
+		System.out.println("");
+		System.out.println("Search for 8");
+		System.out.println(node.findNode(node.root, 8).getData());
+		System.out.println("Size: " + node.size(node.root));
+	}
+	
+	
+	
+
+}

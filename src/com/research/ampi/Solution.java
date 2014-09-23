@@ -8,7 +8,7 @@ public class Solution /////
   {
       int result = 0;
       result = hex_bitcount("2f");
-      System.out.println("Result " + result );//what is this
+      System.out.println("Result " + result );
  
   }
   public static int hex_bitcount ( String S )
