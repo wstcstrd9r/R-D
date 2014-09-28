@@ -4,12 +4,14 @@ public class StackArray {
 	// Constructors
 	private int[] intArray;
 	private int top;
-	private int capacity;
+	private int totalcapacity;
+	private int currCapacity;
 
 	public StackArray( int capacity) {
 		this.intArray = new int[capacity];
-		this.capacity = capacity;
-		this.top = capacity;
+		this.totalcapacity = capacity;
+		this.top = capacity ;
+		this.currCapacity= capacity  ;
 	}
 	public StackArray() {
 		// TODO Auto-generated constructor stub
@@ -24,10 +26,12 @@ public class StackArray {
 		if(!isFull()){
 		System.out.println("in Push");
 		top--;
+		currCapacity--;
 			intArray[top] = value;
 			
 
-		System.out.println("capacity and top " + capacity + " "  + top);
+			System.out.println("Totalcapacity  CurrCacacity top ");
+			System.out.println(totalcapacity + "   " + currCapacity + "   " + top);
 		}else{
 			System.out.println(" Is Full " );
 		}
@@ -36,7 +40,9 @@ public class StackArray {
 		if(!isEmpty()){
 			intArray[top] = 0;
 			top++;
-			System.out.println("capacity and top " + capacity + " "  + top);
+			currCapacity++;
+			System.out.println("Totalcapacity  CurrCacacity top ");
+			System.out.println(totalcapacity + "   " + currCapacity + "   " + top);
 		}else{
 			System.out.println(" Is not empty!!!!!!!" );
 		}
@@ -58,7 +64,7 @@ public class StackArray {
 	}
 	
 	public boolean isEmpty(){
-		if(top==capacity){
+		if(top==totalcapacity){
 			return true;
 		}else{
 			return false;

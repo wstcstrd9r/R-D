@@ -6,42 +6,34 @@ public class StackDriver {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StackArray stackArray = new StackArray(5);
-		stackArray.push(0);
+		StackArray1 stackArray = new StackArray1(5);
+		stackArray.push(1);
 		System.out.println("After 1st push");
 		stackArray.display();
 		System.out.println("---------------------------------");
-		stackArray.push(1);
+		stackArray.push(2);
 		System.out.println("After 2nd push");
 		stackArray.display();
 		System.out.println("---------------------------------");
-		stackArray.push(2);
+		stackArray.push(3);
 		System.out.println("After 3nd push");
 		stackArray.display();
 		System.out.println("---------------------------------");
-		stackArray.push(3);
+		stackArray.push(4);
 		System.out.println("After 4nd push");
 		stackArray.display();
 		System.out.println("---------------------------------");
-		stackArray.push(4);
+		stackArray.push(5);
 		System.out.println("After 5nd push");
 		stackArray.display();
 		System.out.println("---------------------------------");
 		////after being full
-		stackArray.push(5);
+		stackArray.push(6);
 		System.out.println("After 6nd push");
 		stackArray.display();
 		System.out.println("---------------------------------");
 		stackArray.pop();
-		System.out.println("After 5st pop");
-		stackArray.display();
-		System.out.println("---------------------------------");
-		stackArray.pop();
-		System.out.println("After 4nd pop");
-		stackArray.display();
-		System.out.println("---------------------------------");
-		stackArray.pop();
-		System.out.println("After 3rd pop");
+		System.out.println("After 1st pop");
 		stackArray.display();
 		System.out.println("---------------------------------");
 		stackArray.pop();
@@ -49,7 +41,15 @@ public class StackDriver {
 		stackArray.display();
 		System.out.println("---------------------------------");
 		stackArray.pop();
-		System.out.println("After 1nd pop");
+		System.out.println("After 3rd pop");
+		stackArray.display();
+		System.out.println("---------------------------------");
+		stackArray.pop();
+		System.out.println("After 4th pop");
+		stackArray.display();
+		System.out.println("---------------------------------");
+		stackArray.pop();
+		System.out.println("After 5th pop");
 		stackArray.display();
 		System.out.println("---------------------------------");
 		stackArray.pop();
