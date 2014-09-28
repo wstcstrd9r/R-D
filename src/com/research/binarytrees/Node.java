@@ -69,5 +69,27 @@ public class Node {
 		postOrderTraversal(root.rightChild);
 		System.out.println(root.getValue() + " ");
 	}
+	public Node findNode(int value){
+		Node focusNode = root;
+		while(focusNode.getValue() != value){
+			if(focusNode.getValue()>value){
+				focusNode = focusNode.leftChild;
+			}else{
+				focusNode = focusNode.rightChild;
+			}
+			if(focusNode == null){
+				return null;
+			}
+		}
+		
+		return focusNode;
+	}
+	public int size(Node root){
+		if(root == null){
+			return 0;
+		}else{
+			return 1 + size(root.leftChild) + size(root.rightChild);
+		}
+	}
 
 }

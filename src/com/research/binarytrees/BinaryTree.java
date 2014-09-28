@@ -5,6 +5,8 @@ public class BinaryTree {
 	public static void main(String[] args) {
 		//In order:aim for the smalled values first. start with the left child
 		Node node = new Node();
+
+		
 		node.add(7);
 		node.add(1);
 		node.add(0);
@@ -26,8 +28,8 @@ public class BinaryTree {
 		node.postOrderTraversal(node.root);
 		System.out.println("");
 		System.out.println("Search for 8");
-		System.out.println(node.findNode(node.root, 8).getData());
-		System.out.println("Size: " + node.size(node.root));
+		System.out.println(node.findNode(8).getValue());
+		System.out.println("Size: " + node.size(node.root)); 
 	}
 	
 	
