@@ -30,8 +30,8 @@ public class BinaryTree {
 		System.out.println("Search for 8");
 		
 		
-		if(node.findNode(12) != null){
-			System.out.println(node.findNode(12).getValue());
+		if(node.findNode(8) != null){
+			System.out.println(node.findNode(8).getValue());
 		}else{
 			System.out.println("value not found");
 		}
