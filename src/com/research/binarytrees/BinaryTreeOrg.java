@@ -4,7 +4,7 @@ public class BinaryTreeOrg {
     
     BinaryTreeOrg left;  
     BinaryTreeOrg right;  
-    int value;  
+    int value;    
      
     public BinaryTreeOrg(int v) {  
      value = v;  
