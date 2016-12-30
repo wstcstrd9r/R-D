@@ -12,9 +12,9 @@ public class TestSplitString {
 	public void test3char() {
 		final String word = "ABC";
 		final int splitLen = 3;
-		ArrayList arrayListToTest = new ArrayList();
+		ArrayList<String> arrayListToTest = new ArrayList<String>();
 		arrayListToTest.add(word);
-		ArrayList arrayList = SplitString.getList(word, splitLen);
+		ArrayList<String> arrayList = SplitString.getList(word, splitLen);
 		assertSame(arrayListToTest, arrayList);
 		assertEquals(arrayListToTest.indexOf(0), arrayList.indexOf(0));
 		
